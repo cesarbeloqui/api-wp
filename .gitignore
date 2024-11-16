@@ -1,0 +1,11 @@
+# Ignorar la carpeta node_modules
+node_modules/
+
+# Ignorar carpetas y archivos de sesiones
+*_sessions
+
+# Ignorar archivos de imagen PNG
+*.png
+
+# Ignorar archivos de registro
+*.log
