@@ -11,12 +11,12 @@ const main = async () => {
     '/send-message',
     handleCtx(async (bot, req, res) => {
       const body = req.body;
-      const { mensaje, imagen } = body;
+      const { mensaje, imagen, numero } = body;
       console.log(body);
-      bot.sendMessage(5493794142669, mensaje, {
+      bot.sendMessage(numero, mensaje, {
         media: imagen,
       });
-      res.end('se envió hola');
+      res.end('Se envio el mensaje');
     })
   );
   await createBot({
