@@ -6,7 +6,7 @@ const flowBienvenida = addKeyword('hola').addAnswer('Buenas!! Bienvenido');
 
 const main = async () => {
   const provider = createProvider(BaileysProvider);
-  provider.initHttpServer(3002);
+  provider.initHttpServer(3003);
   provider.http?.server.post(
     '/send-message',
     handleCtx(async (bot, req, res) => {

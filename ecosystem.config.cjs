@@ -1,9 +1,9 @@
 module.exports = {
     apps: [{
         name: "api-wp",
-        script: "./src/app.ts", // Asegúrate de que el archivo exista
+        script: "./src/app.js", // Asegúrate de que el archivo exista
         watch: true,
-        interpreter: "node", // Especifica el intérprete node
+        interpreter: "node", // Especifica ts-node como intérprete
         env: {
             NODE_ENV: "development",
         },
